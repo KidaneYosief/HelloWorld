@@ -1,3 +1,7 @@
 this is a new sample I will test.
 this is the Nbranch.
+<<<<<<< HEAD
 Master is added
+=======
+Branch is still there.
+>>>>>>> Nbranch
