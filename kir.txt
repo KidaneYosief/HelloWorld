@@ -1,6 +1,0 @@
-this is a new sample I will test.
-this is the Nbranch.
-Branch is still there.
-next time branch
-this time master laster.
-this time Brnach.
