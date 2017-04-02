@@ -1,12 +1,15 @@
-node {
-   
-   	stage 'Stage 1'
-   		echo 'Hello there, shell scripts'
-   	stage 'Checkout'
-   		git url: 'https://github.com/TTFHW/jenkins_pipeline_shell_scripts.git'
-   	stage 'Build'
-   		sh './myBuild.sh'
-   	stage 'Deploy'
-   		sh './myDeployment.sh'
-  
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'python --version'
+            }
+        }
+        stage('size') {
+            steps {
+                sh 'du -sh *'
+            }
+        }
+    }
 }
