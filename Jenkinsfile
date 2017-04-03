@@ -11,5 +11,10 @@ pipeline {
                 sh 'du -sh *'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'env'
+            }
+        }
     }
 }
