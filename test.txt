@@ -1,11 +1,16 @@
 brew update
 brew install hub
-hub pull-request -m "message pull request" -b master -h kyosief-1
-hub pr checkout 5 master
+hub pull-request -m "message pull request" -b baseBranch -h Head
+export prn=$(hub pull-request -m "message pull request" -b master -h kyosief-1)
+#hub pr checkout PRNumber master 
+hub pr checkout ${prn:lastvalue} master
+#Make sure you rebase incase the local branch can not be merged using fast forward
+Git rebase basebranch
+git pull 
 git checkout master 
-export prn=$(hub pr list)
-echo var
-echo $prn
 git push 
 git push origin master 
+
+
+git config --global core.mergeoptions --no-edit
 
