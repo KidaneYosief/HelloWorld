@@ -1,3 +1,4 @@
+a good instuction for hub
 brew update
 brew install hub
 hub pull-request -m "message pull request" -b baseBranch -h Head
