@@ -1,4 +1,4 @@
-#To creteate PR using the HUB library from Terminal hub command
+#To creteate PR using the HUB library from Terminal hub command line and this tool is great
 hub pull-request -m "message pull request" -b baseBranch -h Head
 
 #merging the pull-request using the PR number
